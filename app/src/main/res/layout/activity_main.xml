@@ -6,7 +6,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".HelloActivity">
+    tools:context=".HelloActivity"
+    android:background="#673AB7"
+    android:gravity="center">
 
     <TextView
         android:id="@+id/textView"
@@ -15,9 +17,10 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:text="@string/app_name"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
 
-    <TextView
+    TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,18 +34,22 @@
     <Button
         android:id="@+id/start_service"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
+        android:layout_height="37dp"
+        android:text="@string/start_service"
+        android:background="#7E57C2"
+        android:layout_alignEnd="@+id/stop_Service"
+        android:layout_below="@+id/textView"
         android:layout_marginTop="10dp"
-        android:text="@string/start_service" />
+        android:textColor="#E1BEE7" />
 
     <Button
         android:id="@+id/stop_Service"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="37dp"
         android:layout_below="@+id/start_service"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="@string/stop_service" />
+        android:text="@string/stop_service"
+        android:background="#7E57C2"
+        android:textColor="#E1BEE7" />
 </RelativeLayout>

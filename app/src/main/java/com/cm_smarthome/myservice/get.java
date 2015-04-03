@@ -56,7 +56,7 @@ public class get {
     public void update() {
         String url = "http://www.cm-smarthome.com/android/statusupdate.php";
         List<NameValuePair> params = new ArrayList<NameValuePair>();//คำอธิบายอยู่ด้านล่าง
-        params.add(new BasicNameValuePair("ID", "5"));//คำอธิบายอยู่ด้านล่าง
+        params.add(new BasicNameValuePair("ID", "1"));//คำอธิบายอยู่ด้านล่าง
         String resultServer = getHttpPost(url, params);//คำอธิบายอยู่ด้านล่าง
 
         //ส่งไป PHP แล้ว PHP รับ $strWhere = $_POST["ID"]; เผื่อแอพต้อง login
