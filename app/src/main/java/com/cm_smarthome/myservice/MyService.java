@@ -63,7 +63,6 @@ public class MyService extends Service {
         return Service.START_STICKY;
     }
 
-
     @Override
     public IBinder onBind(Intent arg0) {
         Log.i(TAG, "Service onBind");
